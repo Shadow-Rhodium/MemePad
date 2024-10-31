@@ -6,3 +6,29 @@
 
 
 #### (No AIs were used in the making of this project)
+
+
+## Requirments:
+- A life
+- An Email
+- A laptop
+- Arduino 
+- Number Pad 4x4
+- Jump Wires
+- Motor Fan
+- Python
+- The 12 Libraries:
+- - time
+  - random
+  - serial
+  - pyautogui
+  - os
+  - webbrowser
+  - pygame
+  - smtlib
+  - email.mime.text
+  - moviepy.editor
+  - cv2
+  - google.generativeai
+
+  
