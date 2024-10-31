@@ -6,16 +6,18 @@ import random as Spin
 
 audio.init()
 def alarm(dir, msg):
-    D = 0
-    audio.music.load(f"C:/Users/HassanHN/Music/Meme/{dir}.mp3")
-    audio.music.play()
-
-    while audio.music.get_busy():  # wait for music to finish playing
-        clock.sleep(1)
-        D = cmd.alert(msg)  # Load the popular external library
-        if D == "OK":
-            break
-
+    try:
+        D = 0
+        audio.music.load(f"C:/Users/HassanHN/Music/Meme/{dir}.mp3")
+        audio.music.play()
+    
+        while audio.music.get_busy():  # wait for music to finish playing
+            clock.sleep(1)
+            D = cmd.alert(msg)  # Load the popular external library
+            if D == "OK":
+                break
+    except:
+        print("No Sound")
 
 
 i = cmd.prompt("Set Timer: ")
