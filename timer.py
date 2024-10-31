@@ -3,7 +3,6 @@ import pyautogui as cmd
 from pygame import mixer as audio
 import random as Spin
 
-
 audio.init()
 def alarm(dir, msg):
     try:
