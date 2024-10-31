@@ -35,9 +35,6 @@ void loop(){
       case '6':
         digitalWrite(13,LOW);
         break;
-   
-    
+     
   }
-
-  
 }}
