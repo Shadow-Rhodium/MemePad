@@ -1,5 +1,3 @@
-
-
 import serial as USB #Make sure to do pip install pyserial in CMD
 import time as clock
 import pyautogui as cmd
@@ -39,7 +37,7 @@ model = genai.GenerativeModel(
 
 chat_session = model.start_chat(history=[])
 
-genai.configure(api_key="AIzaSyA8ApgHh3DVJYL1m5RL9dpPRUiDzfdYjvI")
+genai.configure(api_key="_______________") #get APi key at: https://aistudio.google.com/prompts/new_chat
 c = 0
 
 sender = "sb10599@dnsalbarsha.com"
@@ -101,6 +99,7 @@ try:
             li = ser.readline().decode("utf-8") 
             KEY = str(li)
 
+      
         except:
             print("Arduino Disconnected")
             mp3("Meme")
@@ -156,6 +155,7 @@ try:
                 else:
                     continue
 
+      
         except:
             continue
 
