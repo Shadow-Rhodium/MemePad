@@ -11,7 +11,7 @@
 ## Requirments:
 - A life
 - An Email
-- A laptop
+- A computer
 - Arduino 
 - Number Pad 4x4
 - Jump Wires
