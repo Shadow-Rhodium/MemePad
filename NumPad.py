@@ -53,10 +53,14 @@ def email(subject, body, sender, recipients, password):
     print("Message sent!")
 
 def mp3(dir):
-    VHS.mixer.music.load(f"C:/Users/HassanHN/Music/Meme/{dir}.mp3")
-    VHS.mixer.music.play()
-    while VHS.mixer.music.get_busy():  # wait for music to finish playing
+    try:
+      VHS.mixer.music.load(f"C:/Users/HassanHN/Music/Meme/{dir}.mp3")
+      VHS.mixer.music.play()
+      while VHS.mixer.music.get_busy():  # wait for music to finish playing
         clock.sleep(1)  # Load the popular external library
+
+    except:
+      print("No Sound File")
 
 
 
