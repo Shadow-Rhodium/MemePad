@@ -3,7 +3,7 @@ import time as clock
 import pyautogui as cmd
 import webbrowser as net
 from MemeFunctions import *
-import google.generativeai as genai
+import google.generativeai as Megatron
 from moviepy.editor import VideoFileClip as VFC
 from os import system as stm
 import cv2
@@ -19,14 +19,14 @@ if __name__ == '__main__':
     "response_mime_type": "text/plain",
     }
 
-    model = genai.GenerativeModel(
+    model = Megatron.GenerativeModel(
     model_name="gemini-1.5-flash",
     generation_config=generation_config,
     )
 
     chat_session = model.start_chat(history=[])
 
-    genai.configure(api_key="_______________") #get APi key at: https://aistudio.google.com/prompts/new_chat
+    Megatron.configure(api_key="_______________") #get APi key at: https://aistudio.google.com/prompts/new_chat
     c = 0
 
     sender = "sb10599@dnsalbarsha.com"
