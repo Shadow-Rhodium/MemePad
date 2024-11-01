@@ -17,7 +17,7 @@
 - Jump Wires
 - Motor Fan
 - Python
-- The 12 Libraries:
+- The 14 Libraries:
 - - time
   - random
   - serial
@@ -30,5 +30,7 @@
   - moviepy.editor
   - cv2
   - google.generativeai
+  - multiproccessing
+  - MemeFunctions (Download from here)
 
   
