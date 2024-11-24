@@ -44,7 +44,7 @@ if __name__ == '__main__':
 
     chat_session = model.start_chat(history=[])
 
-    Megatron.configure(api_key="AIzaSyA8ApgHh3DVJYL1m5RL9dpPRUiDzfdYjvI")
+    Megatron.configure(api_key=)
     c = 0
 
     sender = "sb10599@dnsalbarsha.com"
