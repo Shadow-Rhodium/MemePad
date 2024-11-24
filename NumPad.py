@@ -8,6 +8,24 @@ from moviepy.editor import VideoFileClip as VFC
 from os import system as stm
 import cv2
 
+port = None
+
+while True:
+    for p in range(0,10):
+        try:
+            USB.Serial(f"COM{p}")
+            clock.sleep(2)
+            port = p
+            break
+            
+
+        except:
+            print("Waiting for input")
+            #continue
+
+    if port != None:
+        break
+
 
 if __name__ == '__main__':
 
@@ -26,7 +44,7 @@ if __name__ == '__main__':
 
     chat_session = model.start_chat(history=[])
 
-    Megatron.configure(api_key="_______________") #get APi key at: https://aistudio.google.com/prompts/new_chat
+    Megatron.configure(api_key="AIzaSyA8ApgHh3DVJYL1m5RL9dpPRUiDzfdYjvI")
     c = 0
 
     sender = "sb10599@dnsalbarsha.com"
@@ -91,9 +109,13 @@ if __name__ == '__main__':
             try:
                 if KEY[0] == "*":
                         print("OFF")
-                        cmd.alert("Turning Off")
-                        mp3("losers")
-                        break
+                        off = cmd.alert("Turning Off")
+                        if off == "OK":
+                            mp3("losers")
+                            break
+
+                        else:
+                            print("OFF canceled")
 
                 if KEY[0] == "#":
                     print("Censoring")
@@ -214,7 +236,7 @@ if __name__ == '__main__':
                 continue
     
     
-    
+
     except:
         mp3("NoMeme")
         print("Arduino not connected")
